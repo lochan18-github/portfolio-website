@@ -1,27 +1,28 @@
-// AboutUs.jsx
-
 import React from "react";
 
 function AboutUs() {
   return (
-    <div>
-      <h1>About Our Company</h1>
+    <div className="about-us-container">
+      <h1>About Paradise Nursery</h1>
+
       <p>
-        Our company is focused on building modern and user-friendly web
-        applications using the latest technologies such as React, JavaScript,
-        and modern front-end frameworks.
+        Paradise Nursery is an online plant shopping platform that allows users
+        to browse a wide variety of indoor plants, succulents, and air-purifying
+        plants. Our mission is to bring nature closer to people by making plants
+        easily accessible through a simple and modern web application.
       </p>
 
       <p>
-        We aim to create scalable, efficient, and responsive applications that
-        provide a great user experience. Our team is passionate about software
-        development and continuously learning new technologies.
+        Our company focuses on providing high quality plants along with a
+        seamless shopping experience. Users can explore different plant
+        categories, add plants to their cart, manage quantities, and review
+        their shopping cart before checkout.
       </p>
 
       <p>
-        Our mission is to deliver high-quality digital solutions and help
-        businesses improve their online presence through innovative web
-        development.
+        At Paradise Nursery we believe plants improve well-being, productivity,
+        and happiness. Our goal is to make plant shopping easy, enjoyable, and
+        accessible for everyone.
       </p>
     </div>
   );
