@@ -1,29 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
+import ProductList from "./ProductList";
 import "./App.css";
 
 function App() {
+
+  const [showProductList, setShowProductList] = useState(false);
+
+  const handleGetStarted = () => {
+    setShowProductList(true);
+  };
+
+  if (showProductList) {
+    return <ProductList />;
+  }
+
   return (
     <div className="landing-page">
-      <div>
-        <h1>Paradise Nursery</h1>
-        <p>Welcome to Paradise Nursery - Your one stop shop for beautiful plants.</p>
 
-        <button
-          onClick={() => alert("Welcome to Paradise Nursery!")}
-          style={{
-            padding: "12px 24px",
-            fontSize: "18px",
-            backgroundColor: "#4CAF50",
-            color: "white",
-            border: "none",
-            borderRadius: "6px",
-            cursor: "pointer",
-            marginTop: "20px"
-          }}
-        >
+      <div className="landing-content">
+
+        <h1>Paradise Nursery</h1>
+
+        <p>
+          Welcome to Paradise Nursery, your one stop shop for beautiful indoor
+          plants. Discover a wide variety of plants that bring freshness and
+          positivity into your home.
+        </p>
+
+        <button onClick={handleGetStarted}>
           Get Started
         </button>
+
       </div>
+
     </div>
   );
 }
